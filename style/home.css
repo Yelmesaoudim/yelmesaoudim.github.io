@@ -1,0 +1,107 @@
+@media all and (max-width: 703px) {
+    body {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+    #discover-me {
+        width: 45%;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../img/background.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: scroll;
+}
+
+a, h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+div.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(35, 41, 46);
+    border: 1px solid white;
+    height: 500px;
+    width: 25%;
+    transition: 0.3s;
+    overflow: scroll;
+}
+
+div.section:hover {
+    width: 28%;
+    height: 83%;
+}
+
+div.section a {
+    transition: 0.3s;
+}
+
+div.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+div.section a:hover {
+    font-size: 1.2em;
+    color: rgb(148, 47, 129);
+}
+
+.profile-photography {
+    border-radius: 80px;
+    width: 55%;
+}
+
+.section#discover-me p {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.section#discover-me p.self-introduction {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section#discover-me p.self-introduction span {
+    background-color: rgb(116, 84, 146);
+}
+
+#my-experience .projects {
+    overflow: hidden;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    align-items: center;
+    height: 100%;
+}
+
+.contacts a#gmail {
+    margin-bottom: 25%;
+}
