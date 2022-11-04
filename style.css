@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("images/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+div.language-choice {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(35, 41, 46, 0.584);
+    text-align: center;
+    padding: 4px 0;
+}
+
+div.language-choice button {
+    background: none;
+    border: none;
+}
+
+div.language-choice img {
+    width: 30px;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 50px);
+    min-height: 313px;
+}
+
+div.section {
+    background-color: rgb(35, 41, 46);
+    text-align: center;
+    border: 1px solid white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    transition: 0.3s ease-in-out;
+    padding: 0px 10px;
+    overflow: auto;
+}
+
+div.section:hover {
+    width: calc(25% * 1.1);
+    height: calc(70% * 1.1);
+}
+
+div.section .section-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(148, 47, 129);
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    div.section {
+        width: 85%;
+        height: auto;
+        transition: none;
+    }
+
+    div.section:hover {
+        width: 85%;
+        height: auto;
+    }
+}
