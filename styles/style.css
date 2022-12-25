@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: url("images/background.jpeg");
+    background-image: url("../images/background.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -11,13 +11,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a, button {
+a {
     cursor: pointer;
-}
-
-button {
-    padding: 0;
-    margin: 0 5px;
+    text-decoration: none;
 }
 
 div.language-choice {
@@ -30,9 +26,9 @@ div.language-choice {
     padding: 4px 0;
 }
 
-div.language-choice button {
-    background: none;
-    border: none;
+div.language-choice a {
+    width: 30px;
+    height: 30px;
 }
 
 main {
@@ -94,13 +90,13 @@ div.section .section-content {
     align-items: center;
 }
 
-a {
+div.section a {
     text-decoration: none;
     color: white;
     transition: font-size 0.3s;
 }
 
-a:hover {
+div.section a:hover {
     color: rgb(148, 47, 129);
     font-size: 1.2em;
 }
