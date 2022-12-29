@@ -14,3 +14,11 @@ body {
 .univ-font {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1.univ-font {
+    text-align: center;
+}
+
+video {
+    width: 70%;
+}
