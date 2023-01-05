@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-image: url("rickroll.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    font-style: italic;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game-label {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.384);
+    border: solid 2px rgb(112, 27, 27);
+    padding: 8px;
+    width: 50vw;
+}
+
+div.game-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+div.game-buttons button {
+    background-color: rgba(128, 128, 128, 0.384);
+    color: white;
+    border: solid 2px rgb(155, 145, 145);
+    font-size: 15px;
+    flex: 1;
+}
+
+#button-play {
+    margin-right: 5px;
+}
+
+#button-refresh-genprob {
+    margin-left: 5px;
+}
+
+video {
+    width: 70vw;
+    border: 5px solid;
+}
